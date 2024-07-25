@@ -7,7 +7,8 @@ public static class Program
 {
     private static void Main()
     {
-        string inputData = "¡Blockchain!";
+        Console.WriteLine("Write below: ");
+        var inputData = Console.ReadLine();
         Console.WriteLine($"Original hash: {inputData}");
 
         using var sha256 = SHA256.Create();
